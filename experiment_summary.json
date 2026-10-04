@@ -1,0 +1,140 @@
+{
+    "dataset": {
+        "instances": 1100,
+        "features_count": 20,
+        "missing_values": 0,
+        "classes": {
+            "0": 373,
+            "2": 369,
+            "1": 358
+        }
+    },
+    "benchmark_3class": [
+        {
+            "Model": "Random Forest",
+            "Accuracy": 0.8909090909090909,
+            "Precision (Macro)": 0.8925602755453501,
+            "Recall (Macro)": 0.8912662662662663,
+            "F1-Score (Macro)": 0.8908587324440788,
+            "Precision (Weighted)": 0.8925532477472776,
+            "Recall (Weighted)": 0.8909090909090909,
+            "F1-Score (Weighted)": 0.8906704970494764
+        },
+        {
+            "Model": "Support Vector Machine (SVM)",
+            "Accuracy": 0.8863636363636364,
+            "Precision (Macro)": 0.8935325134236062,
+            "Recall (Macro)": 0.8865115115115115,
+            "F1-Score (Macro)": 0.8866841955077249,
+            "Precision (Weighted)": 0.8938804166556867,
+            "Recall (Weighted)": 0.8863636363636364,
+            "F1-Score (Weighted)": 0.8867597029361736
+        },
+        {
+            "Model": "XGBoost",
+            "Accuracy": 0.8772727272727273,
+            "Precision (Macro)": 0.8778805120910383,
+            "Recall (Macro)": 0.8775025025025025,
+            "F1-Score (Macro)": 0.8773592085235921,
+            "Precision (Weighted)": 0.8778759860338807,
+            "Recall (Weighted)": 0.8772727272727273,
+            "F1-Score (Weighted)": 0.8772405562474055
+        }
+    ],
+    "benchmark_binary": [
+        {
+            "Model": "Random Forest",
+            "Accuracy": 0.9272727272727272,
+            "Precision (PPV)": 0.9393939393939394,
+            "Recall (Sensitivity)": 0.8378378378378378,
+            "Specificity": 0.9726027397260274,
+            "NPV": 0.922077922077922,
+            "F1-Score": 0.8857142857142858
+        },
+        {
+            "Model": "SVM (RBF)",
+            "Accuracy": 0.9227272727272727,
+            "Precision (PPV)": 0.9014084507042254,
+            "Recall (Sensitivity)": 0.8648648648648649,
+            "Specificity": 0.952054794520548,
+            "NPV": 0.9328859060402684,
+            "F1-Score": 0.8827586206896552
+        },
+        {
+            "Model": "XGBoost",
+            "Accuracy": 0.9136363636363637,
+            "Precision (PPV)": 0.8767123287671232,
+            "Recall (Sensitivity)": 0.8648648648648649,
+            "Specificity": 0.9383561643835616,
+            "NPV": 0.9319727891156463,
+            "F1-Score": 0.870748299319728
+        }
+    ],
+    "threshold_tuning": [
+        {
+            "Threshold": 0.1,
+            "Sensitivity (Recall)": 1.0,
+            "Specificity": 0.8356164383561644,
+            "PPV (Precision)": 0.7551020408163265,
+            "NPV": 1.0,
+            "F1-Score": 0.8604651162790697,
+            "Accuracy": 0.8909090909090909,
+            "TP": 74,
+            "FP": 24,
+            "FN": 0,
+            "TN": 122
+        },
+        {
+            "Threshold": 0.2,
+            "Sensitivity (Recall)": 1.0,
+            "Specificity": 0.8424657534246576,
+            "PPV (Precision)": 0.7628865979381443,
+            "NPV": 1.0,
+            "F1-Score": 0.8654970760233918,
+            "Accuracy": 0.8954545454545455,
+            "TP": 74,
+            "FP": 23,
+            "FN": 0,
+            "TN": 123
+        },
+        {
+            "Threshold": 0.3,
+            "Sensitivity (Recall)": 0.9864864864864865,
+            "Specificity": 0.8972602739726028,
+            "PPV (Precision)": 0.8295454545454546,
+            "NPV": 0.9924242424242424,
+            "F1-Score": 0.9012345679012347,
+            "Accuracy": 0.9272727272727272,
+            "TP": 73,
+            "FP": 15,
+            "FN": 1,
+            "TN": 131
+        },
+        {
+            "Threshold": 0.4,
+            "Sensitivity (Recall)": 0.8783783783783784,
+            "Specificity": 0.9315068493150684,
+            "PPV (Precision)": 0.8666666666666667,
+            "NPV": 0.9379310344827586,
+            "F1-Score": 0.87248322147651,
+            "Accuracy": 0.9136363636363637,
+            "TP": 65,
+            "FP": 10,
+            "FN": 9,
+            "TN": 136
+        },
+        {
+            "Threshold": 0.5,
+            "Sensitivity (Recall)": 0.8378378378378378,
+            "Specificity": 0.9726027397260274,
+            "PPV (Precision)": 0.9393939393939394,
+            "NPV": 0.922077922077922,
+            "F1-Score": 0.8857142857142858,
+            "Accuracy": 0.9272727272727272,
+            "TP": 62,
+            "FP": 4,
+            "FN": 12,
+            "TN": 142
+        }
+    ]
+}
